@@ -1,0 +1,67 @@
+users:
+  Thor:
+    username: Thor
+    articleIds:
+      - 1
+    commentIds: []
+  Ahhnold:
+    username: Ahhnold
+    articleIds:
+      - 2
+    commentIds:
+      - 1
+  Dread Pirate Roberts:
+    username: Dread Pirate Roberts
+    articleIds:
+      - 3
+    commentIds:
+      - 2
+articles:
+  '1':
+    id: 1
+    title: Thor's first article
+    url: www.thorsFirst.com
+    username: Thor
+    commentIds:
+      - 1
+      - 2
+    upvotedBy:
+      - Dread Pirate Roberts
+    downvotedBy: []
+    comments:
+      - &ref_0
+        id: 1
+        body: Come with me if you want to live.
+        username: Ahhnold
+        articleId: 1
+        upvotedBy:
+          - Dread Pirate Roberts
+        downvotedBy: []
+  '2':
+    id: 2
+    title: Get to da choppa!
+    url: www.ruuunnnn.com
+    username: Ahhnold
+    commentIds: []
+    upvotedBy: []
+    downvotedBy:
+      - Dread Pirate Roberts
+  '3':
+    id: 3
+    title: To the Pain
+    url: www.yourEarsYouKeep.com
+    username: Dread Pirate Roberts
+    commentIds: []
+    upvotedBy: []
+    downvotedBy: []
+nextArticleId: 4
+comments:
+  '1': *ref_0
+  '2':
+    id: 2
+    body: Dear God! What is that thing?
+    username: Dread Pirate Roberts
+    articleId: 1
+    upvotedBy: []
+    downvotedBy: []
+nextCommentId: 3
